@@ -7,7 +7,6 @@ Lucia Almedros Ranz, luciaalmendros
 Fadua Jaber Zekri, 
 
 Celia González Matas, CeliaGonz
-[Nombres, apellidos, y usuario GitHub de los integrantes del equipo.]
 
 ## Objetivos del trabajo
 
