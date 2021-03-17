@@ -3,7 +3,9 @@ Se trata de un breve cuestionario para  que los estudiantes puedan elegir qué c
 
 ## Integrantes del equipo
 Lucia Almedros Ranz, luciaalmendros
+
 Fadua Jaber Zekri, 
+
 Celia González Matas, CeliaGonz
 [Nombres, apellidos, y usuario GitHub de los integrantes del equipo.]
 
