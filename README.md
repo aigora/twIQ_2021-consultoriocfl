@@ -10,6 +10,4 @@ Celia González Matas, CeliaGonz
 
 ## Objetivos del trabajo
 - El objetivo de este trabajo es facilitar y ayudar a los estudiantes con dudas en la eleccion de su futuro academico y laboral. Este programa facilitará algunas propuestas acorde con su personalidad y gustos.
--  1. El usuario deberá introducir su nombre y edad. 
-2. El usuario deberá ir eligiendo la respuesta que mas se adapte a su condición entre las preguntas que iran saliendo a lo largo del programa.
-3. A partir del primer "cuestionario" personal el programa ira ofreciendo distintas opciones que el usuario debera elegir basandose en sus preferencias. 
+- El usuario deberá introducir su nombre y edad, tambien deberá ir eligiendo la respuesta que mas se adapte a su condición entre las preguntas que iran saliendo a lo largo del programa, tras ello a partir del primer "cuestionario" personal el programa ira ofreciendo distintas opciones que el usuario debera elegir basandose en sus preferencias. 
