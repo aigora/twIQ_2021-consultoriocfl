@@ -10,5 +10,6 @@ Celia González Matas, CeliaGonz
 
 ## Objetivos del trabajo
 - El objetivo de este trabajo es facilitar y ayudar a los estudiantes con dudas en la eleccion de su futuro academico y laboral. Este programa facilitará algunas propuestas acorde con su personalidad y gustos.
-- El usuario debe introducir su nombre y edad.
-- El usuario deberá  contestar a varias preguntas con la que se le definirá su carrera universitaria. Dentro de esas preguntas encontraremos tres opciones entre las que deberá elegir cual es la más apropiada para él.
+-  1. El usuario deberá introducir su nombre y edad. 
+2. El usuario deberá ir eligiendo la respuesta que mas se adapte a su condición entre las preguntas que iran saliendo a lo largo del programa.
+3. A partir del primer "cuestionario" personal el programa ira ofreciendo distintas opciones que el usuario debera elegir basandose en sus preferencias. 
