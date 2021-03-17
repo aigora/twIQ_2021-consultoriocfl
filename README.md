@@ -9,5 +9,4 @@ Fadua Jaber Zekri, FaduaJaber
 Celia González Matas, CeliaGonz
 
 ## Objetivos del trabajo
-El objetivo de este trabajo es facilitar y ayudar a los estudiantes con dudas en la eleccion de su futuro academico y laboral. Este programa facilitará algunas propuestas acorde con su personalidad y gustos.
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
+- El objetivo de este trabajo es facilitar y ayudar a los estudiantes con dudas en la eleccion de su futuro academico y laboral. Este programa facilitará algunas propuestas acorde con su personalidad y gustos.
