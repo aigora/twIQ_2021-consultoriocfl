@@ -8,6 +8,10 @@ Al entrar a nuestro consultorio el usuario se encontrará con varias opciones a 
 3.Iniciar sesion para comenzar.
 4.Instrucciones.
 5.Salir.
+
+
+
+
 <img width="672" alt="MenudeOpciones" src="https://user-images.githubusercontent.com/80280279/112640270-76ad0100-8e41-11eb-9d3b-496892e50070.png">
 
 
