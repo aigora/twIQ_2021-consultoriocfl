@@ -3,6 +3,7 @@ Se trata de un breve cuestionario para que los estudiantes puedan elegir qué ca
 
 MENU OPCIONES:
 Al entrar a nuestro consultorio el usuario se encontrará con varias opciones a elegir como:
+
 1.Registrarse.
 
 2.Iniciar sesion para comenzar.
