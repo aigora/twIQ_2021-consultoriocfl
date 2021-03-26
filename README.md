@@ -4,9 +4,10 @@ Se trata de un breve cuestionario para que los estudiantes puedan elegir qué ca
 MENU OPCIONES:
 Al entrar a nuestro consultorio el usuario se encontrará con varias opciones a elegir como:
 1.Registrarse.
-2.Iniciar sesion para comenzar.
-3.Instrucciones.
-4.Salir.
+
+3.Iniciar sesion para comenzar.
+4.Instrucciones.
+5.Salir.
 <img width="672" alt="MenudeOpciones" src="https://user-images.githubusercontent.com/80280279/112640270-76ad0100-8e41-11eb-9d3b-496892e50070.png">
 
 
