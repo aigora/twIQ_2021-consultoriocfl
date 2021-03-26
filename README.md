@@ -5,9 +5,11 @@ MENU OPCIONES:
 Al entrar a nuestro consultorio el usuario se encontrará con varias opciones a elegir como:
 1.Registrarse.
 
-3.Iniciar sesion para comenzar.
-4.Instrucciones.
-5.Salir.
+2.Iniciar sesion para comenzar.
+
+3.Instrucciones.
+
+4.Salir.
 
 
 
