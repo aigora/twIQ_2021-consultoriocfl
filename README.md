@@ -1,4 +1,4 @@
-# consultorioCFL
+# ConsultorioCFL
 Se trata de un breve cuestionario para que los estudiantes puedan elegir qué carrera poder estudiar en el futuro. Consta de varias preguntas acerca de sus gustos personales, su personalidad, sus motivaciones que finalizará con la asignación de una carrera universitaria. 
 
 MENU OPCIONES:
