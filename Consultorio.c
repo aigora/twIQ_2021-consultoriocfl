@@ -11,6 +11,8 @@ int main () {
 	
     printf("\n");		
 	int opcion=0;
+	char nombre[50], primer_apellido[50], segundo_apellido[50], usuario[50], correo_electronico[50], contrasennya[50];
+	int dia, mes, annyo;
 	while (opcion!=1 && opcion!=2 && opcion!=3 && opcion!=4) {
 		
 	    printf("Bienvenidos al cuestionario mas entretenido y con mayor variedad de opciones, asi descubriras para lo que estas hecho.\n");
