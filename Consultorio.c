@@ -25,6 +25,32 @@ int main () {
 	switch (opcion) {
 		    case 1: 
 		        printf("Registrarse.\n");
+			 printf("Nombre:\n");
+			scanf("%s", nombre);
+			
+			printf("Primer apellido:\n");
+			fflush(stdin);
+			scanf("%s", primer_apellido);
+			
+			printf("Segundo apellido:\n");
+			fflush(stdin);
+			scanf("%s", segundo_apellido);
+			
+			printf("Fecha de nacimiento (dia mes annyo)\n");
+			fflush(stdin);
+			scanf("%d %d %d", &dia, &mes, &annyo);
+			
+			printf("Correo electronico\n");
+			fflush(stdin);
+		    scanf("%s", correo_electronico);
+		    
+		    printf("Nombre de usuario:\n");
+		    fflush(stdin);
+			scanf("%s", usuario);		
+			
+			printf("Contrasennya:\n");
+			fflush(stdin);
+			scanf("%s", contrasennya);
 		        break;
 		    case 2:
 			    printf("Iniciar sesion para comenzar.\n");
