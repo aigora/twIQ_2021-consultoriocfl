@@ -42,10 +42,10 @@ int main () {
 			
 			printf("Correo electronico\n");
 			fflush(stdin);
-		    scanf("%s", correo_electronico);
+		        scanf("%s", correo_electronico);
 		    
-		    printf("Nombre de usuario:\n");
-		    fflush(stdin);
+		        printf("Nombre de usuario:\n");
+		        fflush(stdin);
 			scanf("%s", usuario);		
 			
 			printf("Contrasennya:\n");
