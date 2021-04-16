@@ -28,41 +28,51 @@ int main () {
     }	  
 	switch (opcion) {
 		    case 1: 
+			    printf("Registrarse.\n");
+			    printf("Nombre:\n");
+			    scanf("%s", nombre);
+			
+			    printf("Primer apellido:\n");
+			    fflush(stdin);
+			    scanf("%s", primer_apellido);
+			
+			    printf("Segundo apellido:\n");
+			    fflush(stdin);
+			    scanf("%s", segundo_apellido);
+			
+			    printf("Fecha de nacimiento (dia mes annyo)\n");
+			    fflush(stdin);
+			    scanf("%d %d %d", &dia, &mes, &annyo);
+			
+			    printf("Correo electronico\n");
+			    fflush(stdin);
+		        scanf("%s", correo_electronico);
 		    
-		    printf("Registrarse.\n");
-			printf("Nombre:\n");
-			scanf("%s", nombre);
+		        printf("Nombre de usuario:\n");
+		        fflush(stdin);
+			    scanf("%s", usuario);		
 			
-			printf("Primer apellido:\n");
-			fflush(stdin);
-			scanf("%s", primer_apellido);
+			    printf("Contrasennya:\n");
+			    fflush(stdin);
+			    scanf("%s", contrasennya);
 			
-			printf("Segundo apellido:\n");
-			fflush(stdin);
-			scanf("%s", segundo_apellido);
-			
-			printf("Fecha de nacimiento (dia mes annyo)\n");
-			fflush(stdin);
-			scanf("%d %d %d", &dia, &mes, &annyo);
-			
-			printf("Correo electronico\n");
-			fflush(stdin);
-		    scanf("%s", correo_electronico);
-		    
-		    printf("Nombre de usuario:\n");
-		    fflush(stdin);
-			scanf("%s", usuario);		
-			
-			printf("Contrasennya:\n");
-			fflush(stdin);
-			scanf("%s", contrasennya);
-			
-			printf("Bienvenido %s.\n", usuario);
+			    printf("Bienvenido %s.\n", usuario);
 			
 		        break;
+		        
 		    case 2:
+		    	
 			    printf("Iniciar sesion para comenzar.\n");
+			    printf("Introduce el nombre de usuario:");
+			    scanf("%s", usuario);
+			    
+			    printf("Introduce la contrasennya:");
+			    scanf("%s", contrasennya);
+			    
+			    printf("Bienvenido de nuevo %s", usuario);
+			    
 			    break;
+			    
 		    case 3: 
 			    printf("Instrucciones.\n");
 			    break;
