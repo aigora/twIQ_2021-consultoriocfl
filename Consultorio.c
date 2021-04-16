@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define N 100
 
 int main () {
 	
@@ -11,8 +12,9 @@ int main () {
 	
     printf("\n");		
 	int opcion=0;
-	char nombre[50], primer_apellido[50], segundo_apellido[50], usuario[50], correo_electronico[50], contrasennya[50];
+	char nombre[N], primer_apellido[N], segundo_apellido[N], usuario[N], correo_electronico[N], contrasennya[N];
 	int dia, mes, annyo;
+	
 	while (opcion!=1 && opcion!=2 && opcion!=3 && opcion!=4) {
 		
 	    printf("Bienvenidos al cuestionario mas entretenido y con mayor variedad de opciones, asi descubriras para lo que estas hecho.\n");
@@ -26,8 +28,9 @@ int main () {
     }	  
 	switch (opcion) {
 		    case 1: 
-		        printf("Registrarse.\n");
-			 printf("Nombre:\n");
+		    
+		    printf("Registrarse.\n");
+			printf("Nombre:\n");
 			scanf("%s", nombre);
 			
 			printf("Primer apellido:\n");
@@ -44,15 +47,18 @@ int main () {
 			
 			printf("Correo electronico\n");
 			fflush(stdin);
-		        scanf("%s", correo_electronico);
+		    scanf("%s", correo_electronico);
 		    
-		        printf("Nombre de usuario:\n");
-		        fflush(stdin);
+		    printf("Nombre de usuario:\n");
+		    fflush(stdin);
 			scanf("%s", usuario);		
 			
 			printf("Contrasennya:\n");
 			fflush(stdin);
 			scanf("%s", contrasennya);
+			
+			printf("Bienvenido %s.\n", usuario);
+			
 		        break;
 		    case 2:
 			    printf("Iniciar sesion para comenzar.\n");
