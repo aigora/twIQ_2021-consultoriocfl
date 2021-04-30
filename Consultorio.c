@@ -23,12 +23,28 @@ int main () {
 	printf("                    ________________________________________________________________\n");
 	
     printf("\n");	
-	
+    
+	FILE* fichero;
+    struct Usuario usuarios[MAX_USUARIO];
 	struct Usuario nuevo_usuario;
-	int opcion=0;
-	int num_usuarios=0;
+	int opcion=0, i;
+	int num_usuarios=0, sesion_iniciada=0;
 	char usuario[N], contrasennya[N];
 	
+	
+	 // CARGA DE DATOS
+    fichero = fopen("usuarios.txt", "r");
+    
+    if(fichero == NULL) {
+        printf("Error al cargar los datos\n");
+    }
+    else {
+        while (num_usuarios < MAX_USUARIO && fscanf(fichero, "%s %s %s %s %s %s", usuarios[num_usuarios].nombre, usuarios[num_usuarios].primer_apellido, usuarios[num_usuarios].segundo_apellido, usuarios[num_usuarios].usuario, usuarios[num_usuarios].correo_electronico, usuarios[num_usuarios].contrasennya) != EOF) {
+            num_usuarios++;
+        }
+        fclose(fichero);
+    }
+    
 	printf("Bienvenidos al cuestionario mas entretenido y con mayor variedad de opciones, asi descubriras para lo que estas hecho.\n");
 	
 	do {
@@ -86,7 +102,7 @@ int main () {
 			        
 			    num_usuarios++;
 			        
-			    // printf("Has sido la persona numero %d en unirse.\n", num_usuarios); (con ficheros)
+			    printf("Has sido la persona numero %d en unirse.\n", num_usuarios); 
 			        
 			break;
 		  
@@ -98,14 +114,36 @@ int main () {
 			    
 			    printf("Introduce la contrasennya:");
 			    scanf("%s", contrasennya);
-			 
-			    printf("Bienvenido de nuevo %s", usuario);
+			    
+			    for(i = 0; i < num_usuarios; i++) {
+			    	if(strncmp(usuario, usuarios[i].usuario, N) == 0 && strncmp(contrasennya, usuarios[i].contrasennya, N) == 0) {
+			    		printf("\nBienvenido de nuevo %s\n", usuario);
+			    		sesion_iniciada = 1;
+					}
+				}
+				
+				if(sesion_iniciada) {
+					
+					
+					
+					// PREGUNTAS AQUI
+					
+					
+				}
 		
-			break;
+			 
+			   	break;
 			
 		    case 4:
 		    	// Salida del programa
 			    printf("Saliendo...\n");
+			    
+			     fichero = fopen("usuarios.txt", "w");
+                
+                for(i = 0; i < num_usuarios; i++) {
+                    fprintf(fichero, "%s %s %s %s %s %s\n", usuarios[i].nombre, usuarios[i].primer_apellido, usuarios[i].segundo_apellido, usuarios[i].usuario, usuarios[i].correo_electronico, usuarios[i].contrasennya);
+                }
+                fclose(fichero);
 			    
 			break;
 	    }
