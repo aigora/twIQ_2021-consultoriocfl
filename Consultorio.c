@@ -12,6 +12,8 @@ struct Usuario {
 	char usuario[N];
 	char contrasennya[N];
 };
+void imprimirMenu();
+int compararString(char cadena1[], char cadena2[]);
 
 int main () {
 	
@@ -30,6 +32,9 @@ int main () {
 	int num_usuarios=0;
 	int opcion, i, sesion_iniciada;
 	char usuario[N], contrasennya[N];
+	char respuesta1,respuesta2;
+	int opcion2;
+	
 	
 	// CARGA DE DATOS
     fichero = fopen("usuarios.txt", "r");
@@ -51,12 +56,7 @@ int main () {
 		
 		do {
 			// Menú de opciones
-	        printf("\n");
-	        printf("Elige una opcion para continuar:\n");
-	        printf("   1-Instrucciones.\n");
-	        printf("   2-Regitrarse.\n");
-	        printf("   3-Iniciar sesion para comenzar.\n");
-	        printf("   4-Salir.\n");
+	     imprimirMenu();
 	        scanf("%d", &opcion);
 		} while (opcion!=1 && opcion!=2 && opcion!=3 && opcion!=4);
 	   
@@ -96,14 +96,14 @@ int main () {
 			            fflush(stdin);
 				        scanf("%s", nuevo_usuario.usuario);	
 				        for (i=0; i<num_usuarios; i++){
-				        	if (strcmp(usuarios[i].usuario, nuevo_usuario.usuario)==0){
+				        	if (compararString(usuarios[i].usuario, nuevo_usuario.usuario)==0){
 				        		printf("Este nombre de usuario ya esta elegido.\nIntroduzca otro\n");
 				        		break;
 							}
 						}
-					} while (strcmp(usuarios[i].usuario, nuevo_usuario.usuario)==0 );
+					} while (compararString(usuarios[i].usuario, nuevo_usuario.usuario)==0 );
 					
-					if (strcmp(usuarios[i].usuario, nuevo_usuario.usuario)!=0){
+					if (compararString(usuarios[i].usuario, nuevo_usuario.usuario)!=0){
 						strcpy(usuarios[num_usuarios].usuario, nuevo_usuario.usuario);
 					}
 			
@@ -144,8 +144,49 @@ int main () {
 				}
 				
 				if(sesion_iniciada==1) {
-					// PREGUNTAS AQUI	
-					printf("Primera Pregunta:\n");
+					//Preguntas
+					printf("¿Que modalidad estas estudiando?\n");
+					
+					printf("1.Ciencias\n2.Humanidades y Ciencias Sociales\n3.Artes\n");
+					scanf("%d",&opcion2);
+					
+					switch(opcion2){
+						case 1:
+							printf("¿Te desenvuelves bien con los ordenadores?(Si o No)\n");
+							scanf("%s",respuesta1);
+							if (respuesta1=='Si'|| respuesta1=='si'){
+								
+								
+							}
+							else if (respuesta1=='No'||respuesta1=='no') {
+									
+							}
+							
+							break;
+				
+						case 2:
+							printf("¿Te sientes comodo cuando hablas en publico?(Si o No)\n");
+							scanf("%s",respuesta2);
+						    if (respuesta2=='Si'|| respuesta2=='si'){
+						    	printf("¿");
+						    	
+			
+								
+							}
+							else if (respuesta2=='No'||respuesta2=='no') {
+									
+							}
+							
+						
+						
+							break;
+							
+						case 3:
+							break;
+					}
+					
+					
+				
 				}
 				
 				else if (sesion_iniciada==0){
@@ -177,4 +218,29 @@ int main () {
 	} while (opcion!=4);
 	
 	return 0;
+}
+
+void imprimirMenu(){
+	printf("\n");
+ printf("Elige una opcion para continuar:\n");
+	        printf("   1-Instrucciones.\n");
+	        printf("   2-Regitrarse.\n");
+	        printf("   3-Iniciar sesion para comenzar.\n");
+	        printf("   4-Salir.\n");
+	
+}
+
+
+int compararString(char cadena1[], char cadena2[]){
+	int i=0;
+	while(cadena1[i] != '0' && cadena2[i] != '0') {
+		if(cadena1[i]==cadena2[i]){
+			return 0;
+		}
+		
+		else if(cadena1[i]!=cadena2[i]){
+			return 1;
+		}
+		i++;
+	}
 }
