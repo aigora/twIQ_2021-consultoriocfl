@@ -14,6 +14,8 @@ struct Usuario {
 };
 void imprimirMenu();
 int compararString(char cadena1[], char cadena2[]);
+int longitudString(char cadena[]);
+
 
 int main () {
 	
@@ -222,25 +224,36 @@ int main () {
 
 void imprimirMenu(){
 	printf("\n");
- printf("Elige una opcion para continuar:\n");
-	        printf("   1-Instrucciones.\n");
-	        printf("   2-Regitrarse.\n");
-	        printf("   3-Iniciar sesion para comenzar.\n");
-	        printf("   4-Salir.\n");
-	
-}
+	printf("Elige una opcion para continuar:\n");
+	printf("   1-Instrucciones.\n");
+	printf("   2-Regitrarse.\n");
+	printf("   3-Iniciar sesion para comenzar.\n");
+	printf("   4-Salir.\n");
+}   
 
 
 int compararString(char cadena1[], char cadena2[]){
-	int i=0;
-	while(cadena1[i] != '0' && cadena2[i] != '0') {
-		if(cadena1[i]==cadena2[i]){
-			return 0;
-		}
-		
-		else if(cadena1[i]!=cadena2[i]){
-			return 1;
-		}
-		i++;
+	int resul = 0, i;
+	
+	if(longitudString(cadena1) != longitudString(cadena2)){
+		return 1;
 	}
+	
+	for(i = 0; i < strlen(cadena1); i++){
+		if(cadena1[i] != cadena2[i]){
+			resul = 1;
+		}
+	}
+	
+	return resul;
+}
+
+int longitudString(char cadena[]) {
+	int longitud = 0;
+	
+	while(cadena[longitud] != '\0') {
+		longitud++;
+	}
+	
+	return longitud;
 }
