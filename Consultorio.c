@@ -34,7 +34,7 @@ int main () {
 	int num_usuarios=0;
 	int opcion, i, sesion_iniciada;
 	char usuario[N], contrasennya[N];
-	char respuesta1,respuesta2;
+	char respuesta[2];
 	int opcion2;
 	
 	
@@ -155,12 +155,12 @@ int main () {
 					switch(opcion2){
 						case 1:
 							printf("¿Te desenvuelves bien con los ordenadores?(Si o No)\n");
-							scanf("%s",respuesta1);
-							if (respuesta1=='Si'|| respuesta1=='si'){
+							scanf("%s", respuesta);
+							if (respuesta=='Si'|| respuesta=='si'){
 								
 								
 							}
-							else if (respuesta1=='No'||respuesta1=='no') {
+							else if (respuesta == 'No' || respuesta == 'no') {
 									
 							}
 							
@@ -168,14 +168,14 @@ int main () {
 				
 						case 2:
 							printf("¿Te sientes comodo cuando hablas en publico?(Si o No)\n");
-							scanf("%s",respuesta2);
-						    if (respuesta2=='Si'|| respuesta2=='si'){
+							scanf("%s",respuesta);
+						    if (respuesta=='Si'|| respuesta=='si'){
 						    	printf("¿");
 						    	
 			
 								
 							}
-							else if (respuesta2=='No'||respuesta2=='no') {
+							else if (respuesta=='No'||respuesta=='no') {
 									
 							}
 							
@@ -184,13 +184,74 @@ int main () {
 							break;
 							
 						case 3:
+							printf("¿Sueles acudir a teatros, operas, danzas, conservatorios?(Si o No)\n");
+							fflush(stdin);
+							scanf("%s",respuesta);
+							if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
+								printf("¿Te apasiona bailar?(Si o No)\n");
+								fflush(stdin);
+								scanf("%s",respuesta);
+								if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
+									printf("GRADO DE DANZA\n");
+								}
+								else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
+									printf("¿Disfrutas componiendo obras y tocando instrumentos?(Si o No)\n");
+									fflush(stdin);
+									scanf("%s",respuesta);	
+									if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
+										printf("GRADO EN MUSICOLOGIA\n");
+									}
+									else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
+										printf("¿Te interesa la evolucion artistica y cultural del ser humano?(Si o No)\n");
+										fflush(stdin);
+										scanf("%s",respuesta);
+										if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
+											printf("HISTORIA DEL ARTE\n");
+										}
+										else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
+											printf("¿Tienes la capacidad de la creacion y analisis de las artes visuales?(Si o No)\n");
+											fflush(stdin);
+											scanf("%s",respuesta);	
+											if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
+												printf("BELLAS ARTES\n");
+											}
+											else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
+												printf("ARTES ESCENICAS\n");	
+											}
+										}		
+									}
+								}
+							}
+							else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
+								printf("¿Eres capaz de trasmitir y representar valores a traves de diversos modos de comunicacion?(Si o No)\n");
+								fflush(stdin);
+								scanf("%s",respuesta);	
+								if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
+									printf("DISEÑO GRAFICO\n");
+								}
+								else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
+									printf("¿Dedicas tu tiempo libre a la moda?(Si o No)\n");
+									fflush(stdin);
+									scanf("%s",respuesta);
+									if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
+										printf("DISEÑO DE MODA\n");
+									}
+									else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
+										printf("¿Tu sueño es crear arte con la tecnologia?(Si o No)\n");
+										fflush(stdin);
+										scanf("%s",respuesta);	
+										if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
+											printf("DISEÑO DIGITAL\n");
+										}
+										else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
+											printf("DISEÑO DE INTERIORES\n");	
+										}
+									}		
+								}	
+							}
 							break;
 					}
-					
-					
-				
 				}
-				
 				else if (sesion_iniciada==0){
 					printf("\nUsuario o contrasennya no validos\n");
 				}
