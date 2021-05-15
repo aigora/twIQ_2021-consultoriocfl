@@ -151,10 +151,73 @@ int main () {
 					scanf("%d", &opcion2);
 					
 					switch(opcion2){
-						case 1:
-							printf("¿Te desenvuelves bien con los ordenadores?(Si o No)\n");
-							scanf("%s", respuesta);							
+						case 1:				
+					    printf("¿Consideras que te gusta ayudar a las personas?(Si o No)\n");
+							fflush(stdin);
+							scanf("%s",respuesta);
+							if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
+								printf("¿Tratas de entender el comportamiento de tus amigos cuando surge un problema?(Si o No)\n");
+								fflush(stdin);
+								scanf("%s",respuesta);
+								if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
+									printf("PSICOLOGIA seria una buena opcion para ti\n");
+								}
+								else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
+									printf("¿Te gustaria realizar experimentos quimicos y bioquimicos?(Si o No)\n");
+									fflush(stdin);
+									scanf("%s",respuesta);	
+									if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
+										printf("GRADO EN BIOQUIMICA o GRADO EN BIOQUIMICA Y BIOLOGIA MOLECULAR son dos buenas opciones a elegir\n");
+									}
+									else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
+										printf("¿Te gustaria ser capaz de realizar diagnosticos y preparar tratamientos para una enfermedad?(Si o No)\n");
+										fflush(stdin);
+										scanf("%s",respuesta);
+										if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
+											printf("MEDICINA seria perfecta para ti\n");
+										}
+										 else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
+											printf("¿Te ves siendo capaz de estudiar el funcionamiento de maquinas nuevas?¿ Y de crearlas?(Si o No)\n");
+											fflush(stdin);
+											scanf("%s",respuesta);	
+											if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
+												printf("INGENIERIA INDUSTRIAL podria ser una buena opcion para ti\n");
+											}
+											 else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
+												printf("GRADO EN BIOTECNOLOGIA se adapta mucho a tus preferencias y a ti \n");}	
+											}
+										}		
+									}
+								}
+								else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
+								printf("¿Tienes facilidad para resolver problemas numericos?(Si o No)\n");
+								fflush(stdin);
+								scanf("%s",respuesta);	
+								if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
+									printf("GRADO EN MATEMATICAS seria una buena opcion para ti\n");
+								}
+								else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
+									printf("¿Consideras que tienes una buena relacion con los animales? ¿ Te gusta ayudarles?(Si o No)\n");
+									fflush(stdin);
+									scanf("%s",respuesta);
+									if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
+										printf("VETERINARIA seria magnifica para ti\n");
+									}
+									else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
+										printf("¿Te interesa saber como funcionan aparatos que usas a diario como el celular, la television o los ordenadores?(Si o No)\n");
+										fflush(stdin);
+										scanf("%s",respuesta);	
+										if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
+											printf("INGENIERIA INFORMATICA seria una excelente opcion\n");
+										}
+										else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
+											printf("GRADO EN DISEÑO INDUSTRIAL Y DESAROLLO DE PRODUCTO seria una magnifica opcion \n");	}	
+									}
+											
+								}	
+							}
 						break;
+						
 						case 2:
 							printf("Te interesa conocer el pasado para asi enterder el presente?(Si o No)\n");
 							fflush(stdin);
