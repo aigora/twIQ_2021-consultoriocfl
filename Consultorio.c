@@ -254,7 +254,7 @@ int main () {
 								fflush(stdin);
 								scanf("%s", respuesta);
 								if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0){
-									printf("Podrias estudiar: Periodimo o Publicidas y Relaciones publicas.\n");
+									printf("Podrias estudiar: Periodimo o Publicidad y Relaciones publicas.\n");
 								}
 								else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0){
 									printf("¿Te sientes comodo al hablar en publico?(Si o No)\n");
