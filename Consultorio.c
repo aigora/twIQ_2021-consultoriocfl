@@ -68,6 +68,8 @@ int main () {
 			    printf("Bienvenido al Consultorio CFL. En este consultorio seras capaz de realizar un test sobre tus gustos, aficiones y personalidad para guiarte en tu futuro.\n");
 			    printf("El cuestionario consta varias preguntas que se reparten en tres bloques segun tu modalidad: ciencias, ciencias sociales y humanidades , y arte.\n");
 			    printf("Son preguntas rapidas y sencillas que deben ser respondidas con si o no.\n ");
+			    printf("Para poder registrarte unicamente necesitamos tus datos personales y correo electronico.\n");
+				printf("Y recuerda no olvidar tu nombre de usuario y contraseña porque lo necesitaras para iniciar sesion.\n ");
 			    
 			break;
 		        
