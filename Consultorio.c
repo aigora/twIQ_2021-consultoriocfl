@@ -66,7 +66,7 @@ int main () {
 		        printf("Instrucciones.\n");
 		        printf("\n");
 			    printf("Bienvenido al Consultorio CFL. En este consultorio seras capaz de realizar un test sobre tus gustos, aficiones y personalidad para guiarte en tu futuro.\n");
-			    printf("El cuestionario consta de 10 preguntas que se reparten en dos bloques: el primero acerca de tus habilidades y el segundo bloque de como te ves en un futuro.\n");
+			    printf("El cuestionario consta varias preguntas que se reparten en tres bloques segun tu modalidad: ciencias, ciencias sociales y humanidades , y arte.\n");
 			    printf("Son preguntas rapidas y sencillas que deben ser respondidas con si o no.\n ");
 			    
 			break;
@@ -160,31 +160,31 @@ int main () {
 								fflush(stdin);
 								scanf("%s",respuesta);
 								if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
-									printf("PSICOLOGIA seria una buena opcion para ti\n");
+									printf("Podrias estudiar: PSICOLOGIA \n");
 								}
 								else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
 									printf("¿Te gustaria realizar experimentos quimicos y bioquimicos?(Si o No)\n");
 									fflush(stdin);
 									scanf("%s",respuesta);	
 									if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
-										printf("GRADO EN BIOQUIMICA o GRADO EN BIOQUIMICA Y BIOLOGIA MOLECULAR son dos buenas opciones a elegir\n");
+										printf("Podrias estudiar: BIOQUIMICA o BIOQUIMICA Y BIOLOGIA MOLECULAR\n");
 									}
 									else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
 										printf("¿Te gustaria ser capaz de realizar diagnosticos y preparar tratamientos para una enfermedad?(Si o No)\n");
 										fflush(stdin);
 										scanf("%s",respuesta);
 										if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
-											printf("MEDICINA seria perfecta para ti\n");
+											printf("Podrias estudiar:  MEDICINA \n");
 										}
 										 else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
 											printf("¿Te ves siendo capaz de estudiar el funcionamiento de maquinas nuevas?¿ Y de crearlas?(Si o No)\n");
 											fflush(stdin);
 											scanf("%s",respuesta);	
 											if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
-												printf("INGENIERIA INDUSTRIAL podria ser una buena opcion para ti\n");
+												printf("Podrias estudiar: INGENIERIA INDUSTRIAL \n");
 											}
 											 else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
-												printf("GRADO EN BIOTECNOLOGIA se adapta mucho a tus preferencias y a ti \n");}	
+												printf("Podrias estudiar: BIOTECNOLOGIA \n");}	
 											}
 										}		
 									}
@@ -194,24 +194,24 @@ int main () {
 								fflush(stdin);
 								scanf("%s",respuesta);	
 								if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
-									printf("GRADO EN MATEMATICAS seria una buena opcion para ti\n");
+									printf("Podrias estudiar:  MATEMATICAS \n");
 								}
 								else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
 									printf("¿Consideras que tienes una buena relacion con los animales? ¿ Te gusta ayudarles?(Si o No)\n");
 									fflush(stdin);
 									scanf("%s",respuesta);
 									if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
-										printf("VETERINARIA seria magnifica para ti\n");
+										printf("Podrias estudiar: VETERINARIA \n");
 									}
 									else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
 										printf("¿Te interesa saber como funcionan aparatos que usas a diario como el celular, la television o los ordenadores?(Si o No)\n");
 										fflush(stdin);
 										scanf("%s",respuesta);	
 										if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
-											printf("INGENIERIA INFORMATICA seria una excelente opcion\n");
+											printf("Podrias estudiar:INGENIERIA INFORMATICA \n");
 										}
 										else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
-											printf("GRADO EN DISEÑO INDUSTRIAL Y DESAROLLO DE PRODUCTO seria una magnifica opcion \n");	}	
+											printf("Podrias estudiar:  DISEÑO INDUSTRIAL Y DESAROLLO DE PRODUCTO  \n");	}	
 									}
 											
 								}	
@@ -231,10 +231,10 @@ int main () {
 									fflush(stdin);
 									scanf("%s", respuesta);
 									if (compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0){
-										printf("Podrias estudiar: Estudios Ingleses, Estudios Semiticos e Islamicos, Filologia CLasica o Traduccion e interpretacion.\n");
+										printf("Podrias estudiar: ESTUDIOS INGLESES, ESTUDIOS SEMITICOS E ISLAMICOS, FILOLOGIA CLASICA  o TRADUCCION E INTERPRETACION \n");
 									}
 									else if (compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0){
-										printf("Podrias estudiar: Español,lengua y literatura; Lenguas Modernas y sus literaturas o Literarura Gerenal y Comparada.\n");
+										printf("Podrias estudiar:ESPANOL,LENGUA Y LITERATURA ,LENGUAS MODERNAS Y SUS LITERATURAS o LITERATURA GENERAL Y COMPARADA \n");
 									}
 								}
 								else if (compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0){
@@ -242,10 +242,10 @@ int main () {
 									fflush(stdin);
 									scanf("%s", respuesta);
 									if (compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0){
-										printf("Podrias estudiar: Historia o Arqueologia.\n");
+										printf("Podrias estudiar: HISTORIA O ARQUEOLOGIA \n");
 									}
 									else if (compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0){
-										printf("Podrias estudiar: Filosofia o Ciencias de las religiones.\n");
+										printf("Podrias estudiar: FILOSOFIA o CIENCIAS DE LAS RELIGIONES.\n");
 									}
 								}
 							}
@@ -254,7 +254,7 @@ int main () {
 								fflush(stdin);
 								scanf("%s", respuesta);
 								if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0){
-									printf("Podrias estudiar: Periodimo o Publicidad y Relaciones publicas.\n");
+									printf("Podrias estudiar: PERIODISMO  o PUBLICIDAD Y RELACIONES PUBLICAS.\n");
 								}
 								else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0){
 									printf("¿Te sientes comodo al hablar en publico?(Si o No)\n");
@@ -265,10 +265,10 @@ int main () {
 										fflush(stdin);
 										scanf("%s", respuesta);
 										if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0){
-											printf("Pordias estudiar: Ciencias politicas o Derecho.\n");
+											printf("Pordias estudiar: CIENCIAS POLITICAS o DERECHO.\n");
 										}
 										else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0){
-											printf("Podrias estudiar: Antropologia Social y Cultural, Magisterio Infantil, Magisterio en Eduacon Primaria(opcion en bilingue), Pedagogia, Sociologia o Trabajo Social.\n");
+											printf("Podrias estudiar: ANTROPOLOGIA SOCIAL Y CULTURAL, MAGISTERIO INFANTIL, MAGISTERIO EN EDUCACION PRIMARIA (opcion en bilingue), PEDAGOGIA, SOCIOLOGIA  o TRABAJO SOCIAL.\n");
 										}
 									}
 									else if (compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0){
@@ -280,14 +280,14 @@ int main () {
 											fflush(stdin);
 											scanf("%s", respuesta);
 											if (compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0){
-												printf("Podrias estudiar: Economia y finanzas.\n");
+												printf("Podrias estudiar: ECONOMIA Y FINANZAS.\n");
 											}
 											else if (compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0){
-												printf("Podrias estudiar: Administracion y Direccion de Empresas (opcion en ingles) o Relaciones Internacionales\n");
+												printf("Podrias estudiar: ADMINISTRACION Y DIRECCION DE EMPERESAS (opcion en ingles) o RELACIONES INTERNACIONALES\n");
 											}
 										}
 										else if (compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0){
-											printf("Podrias estudiar: Comercio o turismo.\n");
+											printf("Podrias estudiar: COMERCIO o TURISMO.\n");
 										}
 									}
 								}
@@ -303,31 +303,31 @@ int main () {
 								fflush(stdin);
 								scanf("%s",respuesta);
 								if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
-									printf("GRADO DE DANZA\n");
+									printf("Podrias estudiar: DANZA\n");
 								}
 								else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
 									printf("¿Disfrutas componiendo obras y tocando instrumentos?(Si o No)\n");
 									fflush(stdin);
 									scanf("%s",respuesta);	
 									if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
-										printf("GRADO EN MUSICOLOGIA\n");
+										printf("Podrias estudiar: MUSICOLOGIA\n");
 									}
 									else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
 										printf("¿Te interesa la evolucion artistica y cultural del ser humano?(Si o No)\n");
 										fflush(stdin);
 										scanf("%s",respuesta);
 										if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
-											printf("HISTORIA DEL ARTE\n");
+											printf("Podrias estudiar: HISTORIA DEL ARTE\n");
 										}
 										else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
 											printf("¿Tienes la capacidad de la creacion y analisis de las artes visuales?(Si o No)\n");
 											fflush(stdin);
 											scanf("%s",respuesta);	
 											if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
-												printf("BELLAS ARTES\n");
+												printf("Podrias estudiar: BELLAS ARTES\n");
 											}
 											else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
-												printf("ARTES ESCENICAS\n");	
+												printf("Podrias estudiar: ARTES ESCENICAS\n");	
 											}
 										}		
 									}
@@ -338,24 +338,24 @@ int main () {
 								fflush(stdin);
 								scanf("%s",respuesta);	
 								if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
-									printf("DISEÑO GRAFICO\n");
+									printf("Podrias estudiar: DISEÑO GRAFICO\n");
 								}
 								else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
 									printf("¿Dedicas tu tiempo libre a la moda?(Si o No)\n");
 									fflush(stdin);
 									scanf("%s",respuesta);
 									if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
-										printf("DISEÑO DE MODA\n");
+										printf("Podrias estudiar: DISEÑO DE MODA\n");
 									}
 									else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
 										printf("¿Tu sueño es crear arte con la tecnologia?(Si o No)\n");
 										fflush(stdin);
 										scanf("%s",respuesta);	
 										if(compararString(respuesta, "Si") == 0 || compararString(respuesta, "si") == 0) {
-											printf("DISEÑO DIGITAL\n");
+											printf("Podrias estudiar: DISEÑO DIGITAL\n");
 										}
 										else if(compararString(respuesta, "No") == 0 || compararString(respuesta, "no") == 0) {
-											printf("DISEÑO DE INTERIORES\n");	
+											printf("Podrias estudiar: DISEÑO DE INTERIORES\n");	
 										}
 									}		
 								}	
