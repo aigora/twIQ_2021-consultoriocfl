@@ -374,7 +374,7 @@ int main () {
 		    case 4:
 		    	// Salida del programa
 			    printf("Esperamos que te haya sido de gran ayuda este cuestionario.\n");
-			    printf("Recuerda que la decisión final es la tuya, la mas importante. Y si no te gusta, puedes probar otra cosa!.\n");
+			    printf("Recuerda que la decision final es la tuya, la mas importante.\n");
 			    
 	            fichero = fopen("usuarios.txt", "w");
 	
